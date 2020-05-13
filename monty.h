@@ -62,6 +62,7 @@ extern global_t var;
 void (*implement_func(char *str))(stack_t **head, unsigned int line_n);
 void stack_push(stack_t **head, unsigned int line_n);
 void stack_pall(stack_t **head, unsigned int line_n);
+void stack_pint(stack_t **head, unsigned int line_n);
 /*Linked list */
 stack_t *add_nodeint(stack_t **head, const int n);
 stack_t *add_nodeint_end(stack_t **head, const int n);
