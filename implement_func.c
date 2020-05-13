@@ -10,6 +10,7 @@ void (*implement_func(char *str))(stack_t **head, unsigned int line_n)
 	instruction_t stack[] = {
 		{"push", stack_push},
 		{"pall", stack_pall},
+		{"pint", stack_pint},
 		{NULL, NULL}
 	};
 
