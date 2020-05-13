@@ -50,3 +50,19 @@ void stack_pall(stack_t **head, unsigned int line_n)
 		tmp = tmp->next;
 	}
 }
+/**
+ * stack_pint - print only the value
+ * @head: head of doubly linked list
+ * @line_n: Reference to the line of doubly linked list
+ */
+void stack_pint(stack_t **head, unsigned int line_n)
+{
+	if (*head == NULL)
+	{
+		dprintf(2, "L%u: ", line_n);
+		dprintf(2, "can't pint, stack empty\n");
+		free_var();
+		exit(EXIT_FAILURE);
+	}
+	printf("%d\n", (*head)->n);
+}
