@@ -21,9 +21,9 @@ void stack_push(stack_t **head, unsigned int line_n)
 	{
 		if ((!(isdigit(var.stack[i]))) && var.stack[i] != '-')
 		{
-			printf(2, "L%u: ", line_n);
-			printf(2, "usage: push integer\n");
-			free_var()
+			dprintf(2, "L%u: ", line_n);
+			dprintf(2, "usage: push integer\n");
+			free_var();
 			exit(EXIT_FAILURE);
 		}
 		i++;
