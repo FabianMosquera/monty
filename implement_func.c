@@ -11,6 +11,8 @@ void (*implement_func(char *str))(stack_t **head, unsigned int line_n)
 		{"push", stack_push},
 		{"pall", stack_pall},
 		{"pint", stack_pint},
+		{"pop", stack_pop},
+		{"swap",stack_swap},
 		{NULL, NULL}
 	};
 
