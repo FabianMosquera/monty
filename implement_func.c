@@ -18,6 +18,9 @@ void (*implement_func(char *str))(stack_t **head, unsigned int line_n)
 		{"sub", stack_sub},
 		{"div", stack_div},
 		{"mul", stack_mul},
+		{"mod", stack_mod},
+		{"pchar", stack_pchar},
+		{"pstr", stack_pstr},
 		{NULL, NULL}
 	};
 
