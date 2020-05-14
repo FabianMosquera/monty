@@ -71,6 +71,9 @@ void stack_nop(stack_t **head, unsigned int line_n);
 void stack_sub(stack_t **head, unsigned int line_n);
 void stack_div(stack_t **head, unsigned int line_n);
 void stack_mul(stack_t **head, unsigned int line_n);
+void stack_mod(stack_t **head, unsigned int line_n);
+void stack_pchar(stack_t **head, unsigned int line_n);
+void stack_pstr(stack_t **head, unsigned int line_num);
 /*Linked list */
 stack_t *add_nodeint(stack_t **head, const int n);
 stack_t *add_nodeint_end(stack_t **head, const int n);
