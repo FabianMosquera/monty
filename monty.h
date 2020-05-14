@@ -58,13 +58,19 @@ typedef struct global_v
 } global_t;
 
 extern global_t var;
-/*function mandatory */
+/*mandatory function*/
 void (*implement_func(char *str))(stack_t **head, unsigned int line_n);
 void stack_push(stack_t **head, unsigned int line_n);
 void stack_pall(stack_t **head, unsigned int line_n);
 void stack_pint(stack_t **head, unsigned int line_n);
 void stack_pop(stack_t **head, unsigned int line_n);
 void stack_swap(stack_t **head, unsigned int line_n);
+void stack_add(stack_t **head, unsigned int line_n);
+void stack_nop(stack_t **head, unsigned int line_n);
+/*advcend functions*/
+void stack_sub(stack_t **head, unsigned int line_n);
+void stack_div(stack_t **head, unsigned int line_n);
+void stack_mul(stack_t **head, unsigned int line_n);
 /*Linked list */
 stack_t *add_nodeint(stack_t **head, const int n);
 stack_t *add_nodeint_end(stack_t **head, const int n);
