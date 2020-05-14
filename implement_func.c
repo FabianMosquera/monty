@@ -18,7 +18,7 @@ void (*implement_func(char *str))(stack_t **head, unsigned int line_n)
 	{
 		if (strcmp(stack[i].opcode, str) == 0)
 			break;
-		i++;
+		i += 1;
 	}
 	return (stack[i].f);
 }
